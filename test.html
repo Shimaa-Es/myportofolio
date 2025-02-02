@@ -1,0 +1,376 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - [Your Name]</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .testimonials {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        .testimonial {
+            margin-bottom: 1.5rem;
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        .testimonial strong {
+            font-weight: bold;
+        }
+    </style>
+</head> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Testimonial Card with Swiper and Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    /* Custom CSS for testimonial card */
+    .testimonial-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-card h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .testimonial-card p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+
+    .testimonial-card span {
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <!-- Swiper Container -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Testimonial Card 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="/assets/images/Logo name.png" alt="Client 1">
+                <h3>John Doe</h3>
+                <p>"Working with this web designer was an absolute pleasure! They delivered a stunning website that exceeded my expectations."</p>
+                <span>CEO, Company A</span>
+              </div>
+            </div>
+            <!-- Testimonial Card 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 2">
+                <h3>Jane Smith</h3>
+                <p>"The designer was very professional and creative. The website they built for us is both beautiful and functional."</p>
+                <span>Founder, Company B</span>
+              </div>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3">
+                <h3>Michael Brown</h3>
+                <p>"Highly recommend this web designer! They understood our vision and delivered a website that perfectly represents our brand."</p>
+                <span>Manager, Company C</span>
+              </div>
+            </div>
+          </div>
+            <!-- Testimonial Card 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3">
+                <h3>Michael Brown</h3>
+                <p>"Highly recommend this web designer! They understood our vision and delivered a website that perfectly represents our brand."</p>
+                <span>Manager, Company C</span>
+              </div>
+            </div>
+          </div>
+            <!-- Testimonial Card 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3">
+                <h3>Michael Brown</h3>
+                <p>"Highly recommend this web designer! They understood our vision and delivered a website that perfectly represents our brand."</p>
+                <span>Manager, Company C</span>
+              </div>
+            </div>
+          </div>
+            <!-- Testimonial Card 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3">
+                <h3>Michael Brown</h3>
+                <p>"Highly recommend this web designer! They understood our vision and delivered a website that perfectly represents our brand."</p>
+                <span>Manager, Company C</span>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 500,
+      },
+      breakpoints: {
+        // Responsive breakpoints
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+</body>
+</html>
+
+        <!-- landing -->
+        <div class="landing">
+          <div class="intro-text">
+            <h1>Hi, I'm Shimaa</h1>
+            <h2>Web Designer & Developer</h2>
+            <p>
+              I'm a web designer and developer based in Alexandria, Egypt. I
+              have a passion for web design and love to create for web and
+              mobile devices.
+            </p>
+            <div class="main-btns">
+              <a href="#">My resume</a>
+              <a href="#">Get in touch </a>
+            </div>
+          </div>
+          <image class="bro-image" src="assets/images/bro.png" alt="landing" />
+        </div>
+        <!-- about -->
+        <div class="about">
+          <div class="container">
+          <img src="assets/images/about.png" alt="about" />
+          <div class="about-text">
+            <h1>About Me</h1>
+            <h2>
+              I'm a passionate front-end developer looking for my first
+              international oppotunity
+            </h2>
+            <p>
+              Beyond coding, I'm a coffee enthusiast, a bird lover, and a
+              self-taught artist who enjoys spending my free time doodling. I am
+              currently seeking opportunities to bring my skills and enthusiasm
+              to a tech company in Alexandria or Egypt and am excited about the
+              prospect of relocating to pursue new challenges.
+
+              I'm a UI & UX Designer And Front-end Designer with over 1 years
+              of experience.. I'm from HARYANA. I code and create web elements
+              for amazing people around the world. I like work with new
+              people. New people new Experiences.
+            </p>
+            <a class="git-btn" href="#">Get in touch</a>
+          </div>
+        </div>
+      </div>
+
+        <!-- projects -->
+        <div class="projects">
+          <div class="container">
+            <h1>My Projects</h1>
+            <h2>Take a look at my highlighted projects</h2>
+            <div class="project-items">
+              <div class="project-item">
+                <img src="assets/images/Comp 38 2.png" alt="project1" />
+                <h3>Project 1</h3>
+                <p>Project description goes here</p>
+              </div>
+              <div class="project-item">
+                <img src="assets/images/3d 2.png" alt="project2" />
+                <h3>Project 2</h3>
+                <p>Project description goes here</p>
+              </div>
+              <div class="project-item">
+                <img src="assets/images/Comp 38 2.png" alt="project3" />
+                <h3>Project 3</h3>
+                <p>Project description goes here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- contact -->
+        <div class="contact">
+          <div class="container">
+          <div class="contact-data">
+            <h1>Contact Me</h1>
+            <a href="#"><img src="assets/images/Cute Avatar.png" /></a>
+            <div class="contact-text">
+              <h2>Enjoyed my work? Let's work together</h2>
+              <p>
+                I'm always up for a chat. Pop me an email at
+                <a href="https//sheemy1999@gmail.com">sheemy1999@gmail.com</a>
+                or give me a shout on social media.
+              </p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea placeholder="Your Message"></textarea>
+            <a class="git-btn" href="#">Send me a message</a>
+          </div>
+        </div>
+      </div>
+      <!-- ======================== -->
+
+
+
+
+
+
+
+      <i class="fa-solid fa-arrow-right"></i>
+
+
+
+<!-- ======================= -->
+        <!-- footer -->
+        <div class="footer">
+          <h2>Stay Connected</h2>
+          <ul class="social-network">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-vimeo-v"></i></a>
+            </li>
+          </ul>
+          <div class="container-copyright">
+          <p>
+            © 2025 , All Rights Reserved. Develobed By Shimaa with
+            <svg
+              aria-labelledby="svg-inline--fa-title-evClSOPFEEQv"
+              data-prefix="fas"
+              data-icon="heart"
+              width="17"
+              height="15"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="margin-x-4xs app-footer-heart-flutter svg-inline--fa fa-heart"
+            >
+              <title id="svg-inline--fa-title-evClSOPFEEQv" class="">
+                love
+              </title>
+              <path
+                fill="currentColor"
+                d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                class=""
+              ></path>
+            </svg>
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Let's Build Something Amazing Together!</h1>
+        <p class="display-6 text-center mb-5">I'm passionate about creating beautiful, user-friendly interfaces. Whether you have a project in mind or just want to chat about design, I'd love to hear from you!</p>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <h1>Send Me a Message</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn d-inline-block fw-bold p-5">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Testimonials -->
+
+
+        <!-- Social Media Links -->
+        <div class="text-center mt-5">
+            <h2>Let's Connect</h2>
+            <a href="https://linkedin.com/in/yourprofile" class="btn btn-outline-primary me-2">LinkedIn</a>
+            <a href="https://twitter.com/yourprofile" class="btn btn-outline-info me-2">Twitter</a>
+            <a href="https://dribbble.com/yourprofile" class="btn btn-outline-danger">Dribbble</a>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-5">
+            <h2>Want to See My Work?</h2>
+            <p>Check out my portfolio to see some of my latest projects.</p>
+            <a href="/portfolio" class="btn ">View Portfolio</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
